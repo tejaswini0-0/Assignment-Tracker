@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",              // for Jest compatibility
+    "lib": ["dom", "esnext"],          // includes DOM for jsdom support
+    "jsx": "react-jsx",                // or "react" if using React <17
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  "include": ["**/*.test.ts", "**/*.test.tsx", "jest.setup.ts"]
+}
